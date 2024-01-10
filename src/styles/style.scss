@@ -1,0 +1,184 @@
+@import "./config.scss";
+
+
+body {
+  background-color: $lightGrayishCyan;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .calculator {
+      display: flex;
+      width: 960px;
+      height: 480px;
+      background-color: $white;
+      border-radius: 30px;
+
+      .left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .leftContent {
+          height: 90%;
+          width: 90%;
+
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+          gap: 50px;
+          .bill {
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            .billText {
+              font-size: 0.8rem;
+              color: $grayishCyan;
+            }
+            .billAmount {
+              padding: 5px;
+              margin-top: 5px;
+              border: none;
+              border-radius: 10px;
+              background: $dollar no-repeat 20px 14px;
+              background-color: $veryLightGrayishCyan;
+              text-align: right;
+              font-size: 1rem;
+              color: $darkGrayishCyan;
+              &:focus {
+                outline: 2px solid $primary-color;
+              }
+            }
+          }
+          .selectTip {
+            width: 80%;
+            .text {
+              font-size: 0.8rem;
+              color: $grayishCyan;
+            }
+            .tipGrid {
+              padding-top: 5px;
+              display: grid;
+              grid-template-columns: repeat(3, auto);
+              grid-template-rows: repeat(2, 40px);
+              grid-gap: 15px;
+              .tipButton {
+                font-size: 1rem;
+                border-radius: 5px;
+                border: none;
+                padding: 0;
+                width: 100px;
+                color: $white;
+                text-align: center;
+                background: $veryDarkCyan;
+                cursor: pointer;
+              }
+              .customTip {
+                border-radius: 5px;
+                padding: 0;
+                width: 100px;
+                border: 0;
+                text-align: center;
+                background-color: $veryLightGrayishCyan;
+                font-size: 0.9rem;
+                &:focus {
+                  outline: 2px solid $primary-color;
+                }
+              }
+            }
+          }
+          .numOfPpl {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.9rem;
+            color: $grayishCyan;
+            input {
+              padding: 5px;
+              margin-top: 5px;
+              border: none;
+              border-radius: 10px;
+              background: $person no-repeat 20px 14px;
+              background-color: $veryLightGrayishCyan;
+              text-align: right;
+              font-size: 1rem;
+              color: $darkGrayishCyan;
+              &:focus {
+                outline: 2px solid $primary-color;
+
+              }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .rightContent {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 90%;
+        height: 90%;
+        background: $veryDarkCyan;
+        border-radius: 25px;
+
+
+        .tipAmountPerPerson {
+          padding-top: 2rem;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 0.8rem;
+
+          .text {
+            color: $white;
+          }
+          .amount {
+            font-size: 2rem;
+            color: $primary-color;
+          }
+        }
+        .reset {
+          border-radius: 10px;
+          color: $veryDarkCyan;
+          font-size: 1rem;
+          text-align: center;
+          height: 2rem;
+          margin-top: 4rem;
+          width: 80%;
+          background: $lightGrayishCyan;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
