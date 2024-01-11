@@ -95,6 +95,10 @@ button {
                 background: $veryDarkCyan;
                 cursor: pointer;
               }
+              .checked {
+                background-color: $lightGrayishCyan;
+                color: $veryDarkCyan;
+              }
               .customTip {
                 border-radius: 5px;
                 padding: 0;
@@ -103,18 +107,36 @@ button {
                 text-align: center;
                 background-color: $veryLightGrayishCyan;
                 font-size: 0.9rem;
+
                 &:focus {
                   outline: 2px solid $primary-color;
+
                 }
+
               }
             }
           }
-          .numOfPpl {
+          .numOfPeople {
             width: 80%;
             display: flex;
             flex-direction: column;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             color: $grayishCyan;
+            .peopleText {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .peopleErrorText {
+                color: red;
+                font-size: 0.7rem;
+              }
+            }
+            .peopleError {
+              outline: 2px solid red;
+              &:focus {
+                outline: 2px solid red;
+              }
+            }
             input {
               padding: 5px;
               margin-top: 5px;
@@ -125,6 +147,7 @@ button {
               text-align: right;
               font-size: 1rem;
               color: $darkGrayishCyan;
+
               &:focus {
                 outline: 2px solid $primary-color;
 
@@ -161,6 +184,10 @@ button {
 
           .text {
             color: $white;
+            .person {
+              color: $darkGrayishCyan;
+              font-size: 0.7rem;
+            }
           }
           .amount {
             font-size: 2rem;
