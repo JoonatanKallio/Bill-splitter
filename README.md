@@ -4,6 +4,8 @@ This is a challenge from Frontend Mentor where the point is to create a website 
 
 ![image](https://github.com/JoonatanKallio/Bill-splitter/assets/80262292/27bd362d-7e55-49bc-86c3-73a04d027458)
 
+✅[Live page](https://joonatankallio.github.io/Bill-splitter/)
+
 # Technologies used
 **React** for the UI and functionality
 
